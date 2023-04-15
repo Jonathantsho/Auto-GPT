@@ -42,3 +42,8 @@ jobs:
       run: |
         coverage report
         coverage xml
+        
+    - name: Code Scanning
+      uses: jpetrucciani/bandit-check@main
+      with:
+        path: '.'
